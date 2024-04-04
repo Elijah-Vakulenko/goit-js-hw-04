@@ -6,6 +6,20 @@
 // containerSize — число, максимальна кількість одиниць товарів, яку в себе може вмістити контейнер.
 // Функція має повернути результат перевірки, чи помістяться всі товари в контейнер. Тобто порахувати загальну кількість товарів в об’єкті products і повернути true, якщо вона менше або дорівнює containerSize, і false, якщо ні.
 
+
+const isEnoughCapacity = function (products, containerSize) {
+  const totalQuantity = 0;
+
+  for (const product of products) {
+    totalQuantity += product;
+    console.log(product);
+  }
+  
+  console.log(totalQuantity);
+
+  return totalQuantity <= containerSize;
+}
+
 console.log(
   isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)
 ); // true
