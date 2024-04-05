@@ -8,14 +8,13 @@
 
 
 const isEnoughCapacity = function (products, containerSize) {
-  const totalQuantity = 0;
+  let totalQuantity = 0;
 
-  for (const product of products) {
-    totalQuantity += product;
-    console.log(product);
+  for (const key in products) {
+    totalQuantity += products[key];
   }
   
-  console.log(totalQuantity);
+  // console.log(totalQuantity);
 
   return totalQuantity <= containerSize;
 }
