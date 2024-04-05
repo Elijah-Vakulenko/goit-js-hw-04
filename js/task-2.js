@@ -14,8 +14,6 @@ const calcAverageCalories = function (days) {
 
   return totalCal / days.length;
 }
-  
-
 
 console.log(
   calcAverageCalories([
